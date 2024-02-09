@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.dynamicImage{/*Фон*/
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    user-select: none;
+}
+.nad{/*Союз*/
+    margin-top: 28%;
+    left: 50%; 
+    position: absolute;
+    max-height: 50%;
+    max-width: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    
+    
+}
+.nad2{/*Команда Союз*/
+    margin-top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    max-height: 40%;
+    max-width: 80%;
+    user-select: none;
+}
+.zag{/*Загрузка*/
+    margin-top: 45%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    user-select: none;
+    max-height: 10%;
+    max-width: 35%;
+    
+}
+.yt{/*юt*/
+    margin-top: 161.5%; 
+    left: 23%; 
+    user-select: none;
+    position: absolute;
+    max-height: 7%;
+    max-width: 3.8%;
+}
+.tg{/*tg*/
+    margin-top: 161.7%; 
+    left: 19%; 
+    user-select: none;
+    position: absolute;
+    max-height: 6%;
+    max-width: 3%;
+}
+.vk{/*вк*/
+    margin-top: 162.1%;  
+    user-select: none;
+    left: 28%; 
+    position: absolute;
+    max-height: 5%;
+    max-width: 3%;
+}
+.logo2{/*лого с надписью*/
+    margin-top: 4%; 
+    left: 7%; 
+    user-select: none;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 6%;
+    max-width: 8.7%;
+}
+.logo1{/*лого без надписи*/
+    margin-top: 163%; 
+    user-select: none;
+    left: 82%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 4%;
+    max-width: 2%;
+}
+.ispol{/*Используй.*/
+    margin-top: 100%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    max-height: 15%;
+    max-width: 75%; 
+    user-select: none;
+}
+.dryzui{/*В друзья.*/
+    margin-top: 106%;  
+    user-select: none;
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    position: absolute;
+    max-height: 4%;
+    max-width: 20%;
+}
+.sozdavai{/*Создавай.*/
+    margin-top: 109%;  
+    left: 50%; 
+    user-select: none;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    max-height: 4%;
+    max-width: 15%;
+}
+.strim{/*Стрим.*/
+    margin-top: 112%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    user-select: none;
+    max-height: 3%;
+    max-width: 9%;
+}
+.virtyal{/*Виртуальный мир*/
+    margin-top: 121.5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    position: absolute;
+    user-select: none;
+    max-height: 4.3%;
+    max-width: 70%;
+}
+.zag2{/*Фио загрузка*/
+    margin-top: 127%;
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    position: absolute;
+    user-select: none;
+    max-height: 7%;
+    max-width: 27%;
+}
+
+.help {
+    margin-top: 138%;
+    position: absolute;
+    max-width: 8%;
+    max-height: 100%;
+    left: 23%;
+}
+
+.polity {
+    margin-top: 138%;
+    position: absolute;
+    max-width: 7%;
+    max-height: 100%;
+    left: 45%;
+}
+
+.info {
+    margin-top: 138%;
+    position: absolute;
+    max-width: 10%;
+    max-height: 100%;
+    left: 66%;
+}
+
+.voprosi {
+    margin-top: 140%;
+    position: absolute;
+    max-width: 5%;
+    max-height: 100%;
+    left: 23%;
+}
+
+.contacti {
+    margin-top: 142%;
+    position: absolute;
+    max-width: 5%;
+    max-height: 100%;
+    left: 23%;
+}
+
+.avtorskie {
+    margin-top: 140%;
+    position: absolute;
+    max-width: 10%;
+    max-height: 100%;
+    left: 45%;
+}
+
+.pravila {
+    margin-top: 142%;
+    position: absolute;
+    max-width: 5%;
+    max-height: 100%;
+    left: 45%;
+}
+
+.yslovia {
+    margin-top: 144%;
+    position: absolute;
+    max-width: 9%;
+    max-height: 100%;
+    left: 45%;
+}
+
+.onas {
+    margin-top: 140%;
+    position: absolute;
+    max-width: 4%;
+    max-height: 100%;
+    left: 66%;
+}
+
+.sotrudnik {
+    margin-top: 142%;
+    position: absolute;
+    max-width: 10%;
+    max-height: 100%;
+    left: 66%;
+}
+
+.soob {
+    margin-top: 144%;
+    position: absolute;
+    max-width: 8%;
+    max-height: 100%;
+    left: 66%;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+}
+input[type="email"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
