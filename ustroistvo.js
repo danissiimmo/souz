@@ -3,7 +3,7 @@
     if (isMobile) {
         window.location.href = "mobile.html";
     } else {
-        window.location.href = "index.html";
+        window.location.href = "pc.html";
     }
   })();
   

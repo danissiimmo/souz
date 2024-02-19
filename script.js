@@ -1,12 +1,3 @@
-(function() {
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  if (isMobile) {
-      window.location.href = "mobile.html";
-  } else {
-      window.location.href = "index.html";
-  }
-})();
-
 function openPopup() {
   document.getElementById("popup").style.display = "block";
   document.getElementById("overlay").style.display = "block";
