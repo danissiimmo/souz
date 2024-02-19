@@ -80,6 +80,7 @@ body {
     max-height: 100%;
     position: relative;
     user-select: none;
+    left: 0%;
 }
 .nad2{/*Команда Союз*/
     margin-top: 197%; 
@@ -114,7 +115,7 @@ body {
 
 .avtorizasia{/*Загрузка*/
     margin-top: 3%; 
-    left: 98%; 
+    left: 97.7%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
