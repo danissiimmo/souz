@@ -86,8 +86,8 @@ body {
     left: 47%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 210%;
-    max-width: 210%;
+    max-height: 80%;
+    max-width: 80%;
     user-select: none;
 }
 .zag{/*Загрузка*/
@@ -150,7 +150,7 @@ body {
     position: absolute;
     user-select: none;
     max-height: 9%;
-    max-width: 20%;
+    max-width: 17%;
 }
 
 .voprosii{/*Загрузка*/
@@ -160,7 +160,7 @@ body {
     position: absolute;
     user-select: none;
     max-height: 9%;
-    max-width: 20%;
+    max-width: 17%;
 }
 
 .yt{/*юt*/
@@ -168,24 +168,24 @@ body {
     left: 58%; 
     user-select: none;
     position: absolute;
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 5%;
+    max-width: 6%;
 }
 .tg{/*tg*/
     margin-top: 752%; 
     left: 48%; 
     user-select: none;
     position: absolute;
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 5%;
+    max-width: 5%;
 }
 .vk{/*вк*/
     margin-top: 752%;  
     user-select: none;
     left: 38%; 
     position: absolute;
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 5%;
+    max-width: 6%;
 }
 .logo2{/*лого с надписью*/
     margin-top: 3%; 
@@ -207,13 +207,13 @@ body {
 }
 
 .souzgod{/*лого без надписи*/
-    margin-top: 766%; 
+    margin-top: 763%; 
     user-select: none;
     left: 50%; 
     transform: translate(-50%, -50%);
     position: absolute;
-    max-height: 50%;
-    max-width: 50%;
+    max-height: 15%;
+    max-width: 15%;
 }
 
 .ispol{/*Используй.*/
@@ -221,8 +221,8 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 140%;
-    max-width: 140%; 
+    max-height: 100%;
+    max-width: 100%; 
     user-select: none;
 }
 
@@ -231,18 +231,18 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 300%;
-    max-width: 300%; 
+    max-height: 80%;
+    max-width: 80%; 
     user-select: none;
 }
 
 .server{/*Используй.*/
-    margin-top: 405%; 
+    margin-top: 408%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 260%;
-    max-width: 260%; 
+    max-height: 85%;
+    max-width: 85%; 
     user-select: none;
 }
 
@@ -251,8 +251,8 @@ body {
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 250%;
-    max-width: 250%; 
+    max-height: 80%;
+    max-width: 80%; 
     user-select: none;
 }
 
@@ -289,8 +289,8 @@ body {
     transform: translate(-50%, -50%);  
     position: absolute;
     user-select: none;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 80%;
+    max-width: 80%;
 }
 .zag2{/*Фио загрузка*/
     margin-top: 660%;
@@ -305,88 +305,88 @@ body {
 .help {
     margin-top: 690%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 20%;
+    max-height: 10%;
     left: 15%;
 }
 
 .polity {
     margin-top: 718%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 25%;
+    max-height: 10%;
     left: 15%;
 }
 
 .info {
     margin-top: 690%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 30%;
+    max-height: 10%;
     left: 60%;
 }
 
 .voprosi {
     margin-top: 723%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 14%;
+    max-height: 10%;
     left: 15%;
 }
 
 .contacti {
     margin-top: 728%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 14%;
+    max-height: 10%;
     left: 15%;
 }
 
 .avtorskie {
     margin-top: 695%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 25%;
+    max-height: 10%;
     left: 15%;
 }
 
 .pravila {
     margin-top: 700%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 15%;
+    max-height: 10%;
     left: 15%;
 }
 
 .yslovia {
     margin-top: 705%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 25%;
+    max-height: 10%;
     left: 15%;
 }
 
 .onas {
     margin-top: 695%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 10%;
+    max-height: 10%;
     left: 60%;
 }
 
 .sotrudnik {
     margin-top: 700%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 25%;
+    max-height: 10%;
     left: 60%;
 }
 
 .soob {
     margin-top: 705%;
     position: absolute;
-    max-width: 50%;
-    max-height: 100%;
+    max-width: 20%;
+    max-height: 10%;
     left: 60%;
 }
 
