@@ -82,99 +82,110 @@ body {
     user-select: none;
 }
 .nad2{/*Команда Союз*/
-    margin-top: 80%; 
-    left: 50%; 
+    margin-top: 197%; 
+    left: 47%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 36%;
-    max-width: 89%;
+    max-height: 210%;
+    max-width: 210%;
     user-select: none;
 }
 .zag{/*Загрузка*/
-    margin-top: 38%; 
-    left: 31%; 
+    margin-top: 85%; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 11%;
-    max-width: 30%;
+    max-height: 60%;
+    max-width: 80%;
+    
+}
+
+.vhod{/*Загрузка*/
+    margin-top: 110%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    user-select: none;
+    max-height: 60%;
+    max-width: 80%;
     
 }
 
 .avtorizasia{/*Загрузка*/
     margin-top: 3%; 
-    left: 91.8%; 
+    left: 98%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
     max-height: 13%;
-    max-width: 16.5%;
-    min-width: 16%;
+    max-width: 5%;
+    min-width: 5%;
 }
 
 .obnovlenia{/*Загрузка*/
     margin-top: 3%; 
-    left: 31%; 
+    left: 18%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 5%;
-    max-width: 10%;
+    max-height: 7%;
+    max-width: 20%;
 }
 
 .podershka{/*Загрузка*/
-    margin-top: 3.25%; 
-    left: 45%; 
+    margin-top: 3.4%; 
+    left: 41%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 5%;
-    max-width: 10%;
+    max-height: 9%;
+    max-width: 20%;
 }
 
 .contactii{/*Загрузка*/
     margin-top: 3.05%; 
-    left: 58%; 
+    left: 63%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 4%;
-    max-width: 9%;
+    max-height: 9%;
+    max-width: 20%;
 }
 
 .voprosii{/*Загрузка*/
-    margin-top: 3.25%; 
-    left: 70%; 
+    margin-top: 3.3%; 
+    left: 83%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 5.5%;
-    max-width: 9%;
+    max-height: 9%;
+    max-width: 20%;
 }
 
 .yt{/*юt*/
-    margin-top: 274%; 
-    left: 23.1%; 
+    margin-top: 751.8%; 
+    left: 58%; 
     user-select: none;
     position: absolute;
-    max-height: 3%;
-    max-width: 3%;
+    max-height: 50%;
+    max-width: 50%;
 }
 .tg{/*tg*/
-    margin-top: 274%; 
-    left: 19%; 
+    margin-top: 752%; 
+    left: 48%; 
     user-select: none;
     position: absolute;
-    max-height: 3%;
-    max-width: 2.3%;
+    max-height: 50%;
+    max-width: 50%;
 }
 .vk{/*вк*/
-    margin-top: 274.1%;  
+    margin-top: 752%;  
     user-select: none;
-    left: 27.7%; 
+    left: 38%; 
     position: absolute;
-    max-height: 3%;
-    max-width: 3%;
+    max-height: 50%;
+    max-width: 50%;
 }
 .logo2{/*лого с надписью*/
     margin-top: 3%; 
@@ -196,52 +207,52 @@ body {
 }
 
 .souzgod{/*лого без надписи*/
-    margin-top: 275%; 
+    margin-top: 766%; 
     user-select: none;
     left: 50%; 
     transform: translate(-50%, -50%);
     position: absolute;
-    max-height: 10%;
-    max-width: 10%;
+    max-height: 50%;
+    max-width: 50%;
 }
 
 .ispol{/*Используй.*/
-    margin-top: 225%; 
+    margin-top: 595%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 100%;
-    max-width: 100%; 
+    max-height: 140%;
+    max-width: 140%; 
     user-select: none;
 }
 
 .golos{/*Используй.*/
-    margin-top: 115%; 
+    margin-top: 300%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 100%;
-    max-width: 90%; 
+    max-height: 300%;
+    max-width: 300%; 
     user-select: none;
 }
 
 .server{/*Используй.*/
-    margin-top: 154%; 
+    margin-top: 405%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 100%;
-    max-width: 90%; 
+    max-height: 260%;
+    max-width: 260%; 
     user-select: none;
 }
 
 .chat{/*Используй.*/
-    margin-top: 196%; 
+    margin-top: 515%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     position: absolute;
-    max-height: 100%;
-    max-width: 90%; 
+    max-height: 250%;
+    max-width: 250%; 
     user-select: none;
 }
 
@@ -273,7 +284,7 @@ body {
     max-width: 9%;
 }
 .virtyal{/*Виртуальный мир*/
-    margin-top: 239%; 
+    margin-top: 640%; 
     left: 50%; 
     transform: translate(-50%, -50%);  
     position: absolute;
@@ -282,100 +293,100 @@ body {
     max-width: 100%;
 }
 .zag2{/*Фио загрузка*/
-    margin-top: 243%;
+    margin-top: 660%;
     left: 50%; 
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 10%;
-    max-width: 35%;
+    max-height: 60%;
+    max-width: 80%;
 }
 
 .help {
-    margin-top: 251%;
+    margin-top: 690%;
     position: absolute;
-    max-width: 8%;
+    max-width: 50%;
     max-height: 100%;
-    left: 23%;
+    left: 15%;
 }
 
 .polity {
-    margin-top: 251%;
+    margin-top: 718%;
     position: absolute;
-    max-width: 7%;
+    max-width: 50%;
     max-height: 100%;
-    left: 45%;
+    left: 15%;
 }
 
 .info {
-    margin-top: 251%;
+    margin-top: 690%;
     position: absolute;
-    max-width: 10%;
+    max-width: 50%;
     max-height: 100%;
-    left: 66%;
+    left: 60%;
 }
 
 .voprosi {
-    margin-top: 255%;
+    margin-top: 723%;
     position: absolute;
-    max-width: 5%;
+    max-width: 50%;
     max-height: 100%;
-    left: 23%;
+    left: 15%;
 }
 
 .contacti {
-    margin-top: 257%;
+    margin-top: 728%;
     position: absolute;
-    max-width: 5%;
+    max-width: 50%;
     max-height: 100%;
-    left: 23%;
+    left: 15%;
 }
 
 .avtorskie {
-    margin-top: 255%;
+    margin-top: 695%;
     position: absolute;
-    max-width: 10%;
+    max-width: 50%;
     max-height: 100%;
-    left: 45%;
+    left: 15%;
 }
 
 .pravila {
-    margin-top: 257%;
+    margin-top: 700%;
     position: absolute;
-    max-width: 5%;
+    max-width: 50%;
     max-height: 100%;
-    left: 45%;
+    left: 15%;
 }
 
 .yslovia {
-    margin-top: 259%;
+    margin-top: 705%;
     position: absolute;
-    max-width: 9%;
+    max-width: 50%;
     max-height: 100%;
-    left: 45%;
+    left: 15%;
 }
 
 .onas {
-    margin-top: 255%;
+    margin-top: 695%;
     position: absolute;
-    max-width: 3.7%;
+    max-width: 50%;
     max-height: 100%;
-    left: 66%;
+    left: 60%;
 }
 
 .sotrudnik {
-    margin-top: 257%;
+    margin-top: 700%;
     position: absolute;
-    max-width: 9%;
+    max-width: 50%;
     max-height: 100%;
-    left: 66%;
+    left: 60%;
 }
 
 .soob {
-    margin-top: 259%;
+    margin-top: 705%;
     position: absolute;
-    max-width: 7%;
+    max-width: 50%;
     max-height: 100%;
-    left: 66%;
+    left: 60%;
 }
 
