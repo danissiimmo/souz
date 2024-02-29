@@ -13,7 +13,7 @@
 <body>
     <img class="dynamicImage" draggable="false" src="souz/fon.png" alt="Dynamic Image">
     <img class="nad2" draggable="false" src="souz/nad2.png">
-    <img class="zag" draggable="false" src="souz/zag.png">
+    <a href="login.html"><img class="zag" draggable="false" src="souz/zag.png"></a>
     <img class="yt" draggable="false" src="souz/yt.png">
     <a href="https://t.me/souzrussia" target="_blank"><img class="tg" draggable="false" src="souz/tg.png"></a>
     <a href="https://vk.com/soiuzrussia" target="_blank"><img class="vk" draggable="false" src="souz/vk.png"></a>
@@ -30,6 +30,7 @@
     <a href="https://mail.yandex.ru/compose?to=souzhelper@yandex.ru&subject=Поддержка%20&body=Здравствуйте!%20" target="_blank"><img class="podershka" draggable="false" src="souz/podershka.png"></a>
     <img class="contactii" draggable="false" src="souz/contacti.png">
     <img class="voprosii" draggable="false" src="souz/voprosi.png">
+    <div class="polzovatelnick"><p>Логин</a></div>
 
             <a><img class="help" draggable="false" src="souz/help.png"></a>
             <a><img class="polity" draggable="false" src="souz/polity.png"></a>
@@ -86,6 +87,19 @@
             </div>
 
               <div id="overlay"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  // Проверяем, сохранены ли данные в localStorage
+                  const username = localStorage.getItem('username');
+                  const email = localStorage.getItem('email');
+                  const password = localStorage.getItem('password');
+                  if (username && email && password) {
+                    const pcImage = document.querySelector('.zag');
+                    pcImage.style.display = "none"; // Если данные сохранены, скрываем изображение
+                  }
+                });
+              </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>

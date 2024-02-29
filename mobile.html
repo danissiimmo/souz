@@ -14,7 +14,7 @@
     <img class="dynamicImage" draggable="false" src="souzmobile/fon.png" alt="Dynamic Image">
     <img class="nad2" draggable="false" src="souzmobile/nad2.png">
     <img class="zag" draggable="false" src="souzmobile/zag.png">
-    <img class="vhod" draggable="false" src="souzmobile/vhod.png">
+    <a href="login.html"><img class="vhod" draggable="false" src="souzmobile/vhod.png"></a>
     <img class="yt" draggable="false" src="souzmobile/yt.png">
     <a href="https://t.me/souzrussia" target="_blank"><img class="tg" draggable="false" src="souzmobile/tg.png"></a>
     <a href="https://vk.com/soiuzrussia" target="_blank"><img class="vk" draggable="false" src="souzmobile/vk.png"></a>
@@ -87,6 +87,19 @@
             </div>
 
               <div id="overlay"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  // Проверяем, сохранены ли данные в localStorage
+                  const username = localStorage.getItem('username');
+                  const email = localStorage.getItem('email');
+                  const password = localStorage.getItem('password');
+                  if (username && email && password) {
+                    const mobileImage = document.querySelector('.vhod');
+                    mobileImage.style.display = "none"; // Если данные сохранены, скрываем изображение
+                  }
+                });
+              </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>

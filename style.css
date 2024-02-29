@@ -65,6 +65,17 @@ body {
     z-index: 1000;
   }
 
+.polzovatelnick {
+    position: absolute;
+    top: 2%;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    left: 93%;
+    font-size: 2vw; /* Устанавливаем размер шрифта как 4% от ширины экрана */
+    max-width: 5%;
+    max-height: 5%;
+}
+
 .header {
     text-align: center;
 }
