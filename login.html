@@ -1,228 +1,124 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginstyle.css">
-    <link rel="shortcut icon" type="image/x-icon" href="website.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+    <title>Авторизация</title>
     <style>
-      .password-strength-meter {
-      width: 100%;
-      height: 10px;
-      background-color: #ddd;
-      margin-bottom: 10px;
-      position: relative;
-    }
-
-    .password-strength-fill {
-      height: 100%;
-      transition: width 0.3s ease;
-    }
-
-    .weak {
-      background-color: #ff4d4d;
-    }
-
-    .medium {
-      background-color: #ffcc66;
-    }
-
-    .strong {
-      background-color: #8cff66;
-    }
-
-    .excellent {
-      background-color: #66b3ff;
-    }
-
-    .password-strength-text {
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px;
-      color: white;
-      margin-top: 10px;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: #ffffff;
+        }
+        .container {
+            width: 400px;
+            margin: 150px auto;
+            background-color: #202020;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            color: #ffffff;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4652EC;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #3038a6;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .form-container {
+            display: none;
+        }
+        .right-align {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
-    <section class="wrapper">
-      <div class="form signup">
-        <header>Регистрация</header>
-        <form action="/register" method="POST">
-          <input type="text" placeholder="Ник" name="username" required />
-          <input type="text" placeholder="Почта" name="email" required />
-          <input type="password" placeholder="Пароль" name="password" id="password" required />
-          <div class="password-strength-meter">
-            <div class="password-strength-fill"></div>
-          </div>
-          <div class="password-strength-label" id="password-strength-label"></div>
-          <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">Я принимаю все условия использования</label>
-          </div>
-          <input type="submit" value="Начать использовать" />
+    <div class="container" id="auth-container">
+        <h2><strong>Авторизация</strong></h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="username" placeholder="Ник" required>
+            <input type="password" name="password" placeholder="Пароль" pattern=".{4,}" title="Пароль должен содержать не менее 4 символов" required>
+            <input type="submit" value="Войти">
         </form>
-      </div>
-      <div class="form login">
-        <header>Авторизация</header>
-        <form action="/login" method="POST">
-          <input type="text" placeholder="Почта" name="email" required />
-          <input type="password" placeholder="Пароль" name="password" required />
-          <a href="#">Забыл пароль?</a>
-          <input type="submit" value="Вход" />
+        <p><a href="#" onclick="showForm('forgot-password-form')" class="right-align">Забыл пароль</a> | <a href="#" onclick="showForm('registration-form')">Регистрация</a></p>
+    </div>
+
+    <div class="container form-container" id="forgot-password-form">
+        <h2><strong>Забыл пароль</strong></h2>
+        <form action="send-code.php" method="POST">
+            <input type="email" name="forgot-email" placeholder="Почта" required>
+            <input type="submit" value="Далее">
         </form>
-      </div>
-      <script>
-        
-        document.getElementById('password').addEventListener('input', function() {
-    var password = this.value;
-    var strengthMeter = document.querySelector('.password-strength-fill');
-    var strengthLabel = document.getElementById('password-strength-label');
+       <p><a href="#" onclick="showForm('auth-container')" class="right-align">Назад</a></p>
+    </div>
 
-    var strength = 0;
-    var complexity = calculateComplexity(password);
+    <div class="container form-container" id="verification-code-form">
+        <h2><strong>Подтверждение кода</strong></h2>
+        <form action="verify-code.php" method="POST">
+            <input type="text" name="verification-code" placeholder="Код из письма" required>
+            <input type="submit" value="Подтвердить">
+        </form>
+        <p><a href="#" onclick="showForm('auth-container')" class="right-align">Назад</a></p>
+    </div>
 
-    // Оценка сложности пароля
-    if (password.length <= 4) {
-      strength = 0.3;
-    } else if (complexity < 40) {
-      strength = 0.5;
-    } else if (complexity < 60) {
-      strength = 0.7;
-    } else if (complexity < 80) {
-      strength = 0.9;
-    } else {
-      strength = 1;
-    }
+    <div class="container form-container" id="new-password-form">
+        <h2><strong>Новый пароль</strong></h2>
+        <form action="reset-password.php" method="POST">
+            <input type="password" name="new-password" placeholder="Новый пароль" pattern=".{4,}" title="Пароль должен содержать не менее 8 символов" required>
+            <input type="submit" value="Сменить пароль">
+        </form>
+        <p><a href="#" onclick="showForm('auth-container')" class="right-align">Войти</a></p>
+    </div>
 
-    // Обновление полосы силы пароля
-    strengthMeter.style.width = (strength * 100) + '%';
+    <div class="container form-container" id="registration-form">
+        <h2><strong>Регистрация</strong></h2>
+        <form action="register.php" method="POST">
+            <input type="text" name="new-username" placeholder="Ник" required>
+            <input type="email" name="new-email" placeholder="Почта" required>
+            <input type="password" name="new-password" placeholder="Пароль" pattern=".{4,}" title="Пароль должен содержать не менее 8 символов" required>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+        <p>Уже есть аккаунт? <a href="#" onclick="showForm('auth-container')">Авторизация</a></p>
+    </div>
 
-    // Определение класса для стилизации полосы
-    strengthMeter.className = 'password-strength-fill'; // Обнуляем класс перед добавлением нового
-    if (strength <= 0.4) {
-      strengthMeter.classList.add('weak');
-      strengthLabel.textContent = 'Надежность пароля: Слабый';
-    } else if (strength < 0.7) {
-      strengthMeter.classList.add('medium');
-      strengthLabel.textContent = 'Надежность пароля: Средний';
-    } else if (strength < 0.9) {
-      strengthMeter.classList.add('strong');
-      strengthLabel.textContent = 'Надежность пароля: Сильный';
-    } else if (strength > 0.9) {
-      strengthMeter.classList.add('excellent');
-      strengthLabel.textContent = 'Надежность пароля: Отличный';
-    }
-  });
+    <script>
+        function showForm(formId) {
+            document.getElementById('auth-container').style.display = 'none';
+            document.getElementById('forgot-password-form').style.display = 'none';
+            document.getElementById('verification-code-form').style.display = 'none';
+            document.getElementById('new-password-form').style.display = 'none';
+            document.getElementById('registration-form').style.display = 'none';
 
-  // Функция для вычисления сложности пароля
-  function calculateComplexity(password) {
-    var complexity = 0;
-    var regex = [
-      /[a-z]/,   // Буквы в нижнем регистре
-      /[A-Z]/,   // Буквы в верхнем регистре
-      /\d/,      // Цифры
-      /[^A-Za-z0-9]/ // Специальные символы
-    ];
-
-    for (var i = 0; i < regex.length; i++) {
-      if (regex[i].test(password)) {
-        complexity += 25;
-      }
-    }
-
-    complexity += Math.min(password.length, 20) * 2.5;
-
-    return Math.min(complexity, 100);
-  }
-
-
-
-
-        const wrapper = document.querySelector(".wrapper"),
-              signupHeader = document.querySelector(".signup header"),
-              loginHeader = document.querySelector(".login header");
-        
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
-        
-        document.addEventListener("DOMContentLoaded", function() {
-  const signupForm = document.querySelector(".signup form");
-  const loginForm = document.querySelector(".login form");
-  const signupUsernameInput = signupForm.querySelector('input[name="username"]');
-  const signupEmailInput = signupForm.querySelector('input[name="email"]');
-  const signupPasswordInput = signupForm.querySelector('input[name="password"]');
-  const loginEmailInput = loginForm.querySelector('input[name="email"]');
-  const loginPasswordInput = loginForm.querySelector('input[name="password"]');
-
-  signupForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const username = signupUsernameInput.value.trim();
-    const email = signupEmailInput.value.trim();
-    const password = signupPasswordInput.value.trim();
-
-    if (username.length < 3 || !isValidEmail(email) || password.length < 6) {
-      alert("Пожалуйста, введите корректные данные.");
-      return;
-    }
-
-     // Сохранение данных в localStorage
-      localStorage.setItem('username', username);
-      localStorage.setItem('email', email);
-      localStorage.setItem('password', password);
-
-    // Перенаправление на другую страницу
-    redirectToCorrectPage();
-  });
-
-  loginForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    const email = loginEmailInput.value.trim();
-    const password = loginPasswordInput.value.trim();
-
-    if (!isValidEmail(email) || password.length < 6) {
-      alert("Пожалуйста, введите корректные данные.");
-      return;
-    }
-
-     // Сохранение данных в localStorage
-      localStorage.setItem('username', username);
-      localStorage.setItem('email', email);
-      localStorage.setItem('password', password);
-
-    // Перенаправление на другую страницу
-    redirectToCorrectPage();
-  });
-
-  function isValidEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
-
-  function redirectToCorrectPage() {
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const device = isMobile ? 'mobile' : 'pc';
-  localStorage.setItem('device', device);
-
-  if (isMobile) {
-    window.location.href = "mobile.html";
-  } else {
-    window.location.href = "pc.html";
-  }
-}
-});
-
-      </script>
-    </section>
-    
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
+            document.getElementById(formId).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
