@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .backcontainer {
+        background-color: #f0f0f0;
+        padding: 150px 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    
+      .code {
+        font-size: 24px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-size: 50px;
+        color: #4652EC;
+        text-align: center;
+        margin-top: -110px;
+      }
+    
+      .footer {
+        font-size: 12px;
+        color: #888;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        color: #4652EC;
+      }
+      .bottomtext {
+        font-size: 10px;
+        text-align: center;
+      }
+    </style>
+    </head>
+    <body>
+    <div class='backcontainer'>
+      <p class='title'><a href='https://vk.com/soiuzrussia'><strong>СОЮЗ</strong></a></p>
+    <div class='container'>
+      <p class='code'><strong>$confirmationCode</strong></p>
+      <p class='footer'><em>IP-адрес: ".$_SERVER['REMOTE_ADDR']."<br>Местоположение: ".getCountry($_SERVER['REMOTE_ADDR'])."</em></p>
+    </div>
+    <p class='bottomtext'>Если вы не запрашивали восстановление пароля,</p>
+    <p class='bottomtext'>проигнорируйте это сообщение.</p>
+    </div>
+    </body>
+</html>
