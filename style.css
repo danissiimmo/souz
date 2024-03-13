@@ -103,16 +103,26 @@ body {
 }
 .zag{/*Загрузка*/
     margin-top: 39%; 
-    left: 31%; 
+    left: 26%; 
     transform: translate(-50%, -50%);
     position: absolute;
     user-select: none;
-    max-height: 23%;
-    max-width: 29%;
+    max-height: 14%;
+    max-width: 20%;
     
 }
 
-.avtorizasia{/*Загрузка*/
+.authreg{/*Загрузка*/
+    margin-top: 39%; 
+    left: 47%; 
+    transform: translate(-50%, -50%);
+    position: absolute;
+    user-select: none;
+    max-height: 14%;
+    max-width: 20%;
+}
+
+.avtorizasia, .avtorizasialogout{/*Загрузка*/
     margin-top: 3%; 
     left: 91.8%; 
     transform: translate(-50%, -50%);
